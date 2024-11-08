@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 const sidebar = document.querySelector('.sidebar');
-const closeBtn = document.querySelector('.close-btn');
+const closeBtn = document.querySelector('.button_close');
 
 // Función para cerrar la sidebar
 closeBtn.addEventListener('click', () => {
