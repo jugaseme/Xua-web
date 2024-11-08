@@ -171,3 +171,41 @@ header {
   height: 50px;
   width: 50px;
 }
+
+.close-btn {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  transition: transform 0.3s ease;
+}
+
+.close-btn:hover {
+  transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+  .close-btn{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+  }
+  
+
+  }
+  .sidebar h2 {
+    margin-top: 40px;
+  
+  }
