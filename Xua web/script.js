@@ -10,3 +10,11 @@ document.addEventListener('DOMContentLoaded', function() {
         console.error("No se encontró el botón o la sidebar");
     }
 });
+
+const sidebar = document.querySelector('.sidebar');
+const closeBtn = document.querySelector('.close-btn');
+
+// Función para cerrar la sidebar
+closeBtn.addEventListener('click', () => {
+    sidebar.classList.remove('hidden'); // Asumiendo que 'hidden' es la clase que muestra la sidebar
+});
