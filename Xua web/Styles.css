@@ -209,3 +209,20 @@ header {
     margin-top: 40px;
   
   }
+@media (max-width: 768px) {
+  .btn{
+    width: 65px;
+    height: 16px;
+  }
+  .btn .text{
+    width: 55px;
+    height: 14px;
+    font-size: 16px;
+    
+  }
+  .btn .icon{
+    width: 60px;
+    height: 40px;
+  }
+
+  }
