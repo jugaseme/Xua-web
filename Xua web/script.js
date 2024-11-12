@@ -18,3 +18,12 @@ const closeBtn = document.querySelector('.button_close');
 closeBtn.addEventListener('click', () => {
     sidebar.classList.remove('hidden'); // Asumiendo que 'hidden' es la clase que muestra la sidebar
 });
+// JavaScript para manejar el dropdown
+document.addEventListener('DOMContentLoaded', () => {
+    const dropdownTitle = document.querySelector('.dropdown-title');
+    const dropdown = document.querySelector('.dropdown');
+
+    dropdownTitle.addEventListener('click', () => {
+        dropdown.classList.toggle('active');
+    });
+});
