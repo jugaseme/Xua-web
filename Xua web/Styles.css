@@ -235,7 +235,7 @@ header {
   top:-10px;
   left: 550px;
   font-size: 22px;
-  font-style: oswald;
+
 }
 .container p{
   text-align: right;
@@ -343,6 +343,13 @@ header {
     left: 165px;
     font-size: 16px;
     font-style: oswald;
+  }
+
+  .title-link{
+    top: 0px;
+    left: -30px;
+    font-size: 22px;
+
   }
 
 }
