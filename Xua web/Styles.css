@@ -341,14 +341,12 @@ header {
   .content_t{
     top: 10px;
     left: 165px;
-    font-size: 16px;
-    font-style: oswald;
   }
 
   .title-link{
-    top: 0px;
-    left: -30px;
-    font-size: 22px;
+    top: -23px;
+    left: -40px;
+    font-size: 25px;
 
   }
 
