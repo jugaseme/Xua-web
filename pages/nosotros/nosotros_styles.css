@@ -6,6 +6,12 @@ body{
   padding: 0;
   margin: 0;
   font-family: "poppins", sans-serif;
+  background: linear-gradient(
+    -45deg,
+    #ff0707,
+    #eb5656,
+    #c00000,
+  );
 }
 
 .navbar{
@@ -29,7 +35,6 @@ body{
 }
 .navegacion{
   display: flex;
-  align-items: center;
   padding: 1rem;
   background-color: transparent;
 }
@@ -39,6 +44,7 @@ body{
   margin-left: 1rem;
   font-weight: bold;
   margin-right: 23rem;
+  margin-top: -1rem;
 }
 .link{
   margin-right: 10px;
@@ -59,14 +65,8 @@ body{
 .titulo img:nth-child(1){
   width: 100px;
   height: 100px;
-  margin: 0;
+  margin-top: -300px;
 
-}
-.titulo img:nth-child(2){
-  width: 170px;
-  height: 200px;
-  top: 20%;
-  margin-left: -10px;
 }
 .btn_menu button {
   font-size: 18px;
@@ -256,10 +256,16 @@ background-color:rgb(63, 63, 63) ;
 }
 .Texto h1{
   font-size: 4rem;
+  font-family: 'Dangrek', cursive;
+  font-weight: bold;
+  color: rgb(255, 0, 0);
 }
 
 .Texto h3{
   font-size: 3rem;
+  margin-top: -3rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bold;
 }
 .Texto{
   display: flex;
@@ -269,10 +275,22 @@ background-color:rgb(63, 63, 63) ;
   width: 50%;
   height: 100%;
   left: 0%;
-  transform: translate(50%, 0%);
-  background-color: rgb(255, 255, 255);
+  transform: translate(5%, 0%);
   color: rgb(0, 0, 0);
+  z-index: 50;
 }
+.publica{
+  display: flex;
+  width: 40%;
+  height: 600px;
+  left: 0%;
+  top: 0%;
+  transform: translate(140%, -110%);
+  margin: -20px;
+  z-index: 20;
+
+}
+
 .barra{
   display: flex;
   width: 100%;
