@@ -40,11 +40,11 @@ body{
 .link{
   margin-right: 10px;
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: rgb(255, 0, 0);
   font-size: 1.2rem;
 }
 .link:hover{
-  color: rgb(83, 163, 255);
+  color: rgb(255, 93, 93);
 }
 .titulo{
   display: flex;
@@ -126,7 +126,7 @@ body{
 
 .slide-menu a:hover {
   background: #ffffffbb;
-  color: rgb(83, 163, 255);
+  color: rgb(255, 0, 0);
 }
 
 /* Botón de cierre */
@@ -245,13 +245,12 @@ background-color:rgb(63, 63, 63) ;
   }
 }
 
-.fondos{
+.fondos img{
   width: 100%;
-  height: 130vh;
+  height: 100vh;
   object-fit: cover;
   z-index: -1;
   display: flex;
-  filter:saturate(115%);
 
 }
 .nombre {
@@ -383,4 +382,11 @@ background-color:rgb(63, 63, 63) ;
 .submit:active{
   transform: translate(0.1em, 0.1em);
   box-shadow: 0.1em 0.1em hsl(0, 100%, 63%);
+}
+.telefono_icon{
+  position: absolute;
+  top: 60%;
+  right: 100%;
+  color: #000;
+  z-index: 1000;
 }
