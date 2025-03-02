@@ -433,7 +433,7 @@ ul {
   .btn_menu button {
     font-size: .9rem;
     margin-right: -20px;
-    margin-left: 20px;
+    margin-left: -5px;
   }
   .titulo img{
     width: 70px;
