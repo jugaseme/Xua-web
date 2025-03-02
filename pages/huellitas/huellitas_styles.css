@@ -19,6 +19,12 @@ body{
   border-bottom: 0.1rem solid rgba(255, 255, 255, 0.925);
   z-index: 100;
 }
+@media (max-width: 768px) {
+  .navbar {
+    height: 5rem;
+    flex-direction: column;
+  }
+}
 .sticky .navbar{
   height: 8rem;
   background-color: #000;
@@ -36,11 +42,22 @@ body{
   font-weight: bold;
   margin-right: 15rem;
 }
+@media (max-width: 768px) {
+  .navegacion h1 {
+    font-size: 1.5rem;
+    margin-right: 5rem;
+  }
+}
 .link{
   margin-right: 10px;
   text-decoration: none;
   color: rgb(255, 255, 255);
   font-size: 1.2rem;
+}
+@media (max-width: 600px) {
+  .link {
+    font-size: 1rem;
+  }
 }
 .link:hover{
   color: rgb(255, 0, 0);
@@ -251,3 +268,43 @@ background-color:rgb(63, 63, 63) ;
   display: flex;
   filter: brightness(85%);
 }
+
+.cositas h1{
+  font-size: 6rem;
+  color: green;
+  position: absolute;
+  top: 5%;
+  left: 2%;
+}
+.cositas h3{
+  font-size: 4.5rem;
+  color: green;
+  position: absolute;
+  top: 20%;
+  left: 2%;
+
+}
+.textico{
+  position: absolute;
+  top: 50%;
+  left: 2%;
+  font-size: 1.5rem;
+  border-radius: 30px;
+  width: 38%;
+  height: auto;
+
+}
+.textico p{
+  color: rgb(255, 255, 255);
+}
+.textico2{
+  position: absolute;
+  top: 20%;
+  left: 65%;
+  font-size: 1.2rem;
+  border-radius: 30px;
+  width: 35%;
+  height: auto;
+  color: rgb(255, 255, 255);
+}
+
