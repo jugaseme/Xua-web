@@ -95,7 +95,7 @@ body{
 .fondo img{
   filter: brightness(0.5);
   width: 100%;
-  height: 100%;
+  height: 100vh;
   display: flex;
   overflow-x: hidden;
   z-index: -1;
@@ -428,142 +428,52 @@ ul {
   color: white;
   text-shadow: white 0px 0px 10px;
 }
-/*media tablets*/
-@media (max-width: 768px) {
-  .carrusela h1{
-    font-size: 5rem;
-  }
-  .btn_menu{
-    margin-top: -10px;
+/*responsive celular*/
+@media (max-width:426px) {
+  .btn_menu button {
+    font-size: .9rem;
+    margin-right: -20px;
+    margin-left: 20px;
   }
   .titulo img{
     width: 70px;
     height: 70px;
-    margin-left: 1rem;
+    margin-left: 20px;
+    margin-right: 10px;
   }
-  .navegacion h1{
-    font-size: 1.5rem;
-    margin-right: 2rem;
-    flex-direction: row;
-  }
-  .link{
-    font-size: 1.2rem;
-  }
-  .t_P1 h1:nth-child(1){
-    font-size: 5rem;
-    left: 15%;
-    top: 35%;
-  }
-  .t_P1 h1:nth-child(2){
-    font-size: 5em;
-    left: 10%;
-    top: 45%;
-  } 
-  .text_R{
-    left: 30%;
-    top: 25%;
-  }
-  .carrusela{
-    width: 90%;
-    height: 150vh;
-    overflow: hidden;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    display: flex;
-  }
-  .carrusel{
-    margin-top: 10%;
-  }
-  .puntos p{
-    margin-top: 20%;
-    font-size: 50px;
-  }
-  .imagenes:active .texto{
-    transition: height 1s, transform 1s, background-color 1s;
-    transform: translateY(-75px);
-    height: 200px;
-    background-color: rgba(131, 191, 231, 0);
-  }
-  
-  .imagenes:active .texto p{
-    transition: font-size 0s .2s linear;
-    font-size: 15px;
-    font-weight: 300;
-    text-shadow: 0px 0px 10px #000000;
-  }
-}
-
-/*responsive celular*/
-@media (max-width: 400px) {
-  .carrusela h1{
-    font-size: 3rem;
-  }
-  .fondo {
-    width: 100%;
-    height:200vh;
-    z-index: -1;
-    overflow: hidden; }
   .navegacion h1{
     display: none;
-  }
-  .btn_menu button{
-    font-size: 15px;
-    margin-left: 2px;
-    margin-right: 2px;
-  }
-  .link{
-    margin: 5px;
-    justify-content: space-around;
-  }
-  .titulo img{
-    width: 100px;
-    height: 100px;
-    margin-left: 5px;
-    margin-right: -5px;
-  }
-  .t_P1 h1:nth-child(1){
-    top: 25%;
-    left: 50%;
-  }
-  .t_P1 h1:nth-child(2){
-    top: 35%;
-    left: 50%;
-  }
-  .text_R{
-    left: 5%;
-    width: 350px;
-    top: 60%;
-    text-align: center;
   }
   .card{
     flex-direction: column;
   }
-  .texto{
-    width: -150px;
-    height: 50px;
-    align-content: center;
+  .link{
+    font-size: 1.2rem;
+    margin: 10px;
+    justify-content: space-evenly;
   }
-  .puntos p{
-    font-size: 50px;
-  } 
-  .imagenes:hover .texto{
-    transition: height 1s, transform 1s, background-color 1s;
-    transform: translateY(-75px);
+  .t_P1 h1:nth-child(1){
+    font-size: 4rem;
+    top: 22%;
+    left: 50%;
+  }
+  .t_P1 h1:nth-child(2){
+    font-size: 4rem;
+    top: 27%;
+    left: 50%;
+  }
+  .text_R{
+    width: 350px;
+    justify-content: center;
+    text-align: center;
     height: 200px;
-    width: 150px;
-    background-color: rgba(63, 106, 138, 0.71);
+    top: 42%;
+    right: 10%;
   }
-  
-  .imagenes:hover .texto p{
-    transition: font-size 0s .2s linear;
-    font-size: 12px;
-    font-weight: 300;
-    text-shadow: 0px 0px 10px #000000;
+  .text_R p{
+    font-size: .9rem;
   }
-  .imagenes .texto{
-    width: 200px;
-    height: 50px;
-    transition: 1s;
+  .carrusela h1{
+    font-size: 5rem;
   }
 }
