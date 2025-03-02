@@ -119,30 +119,3 @@ function closeSlide() {
 }
 
 
-
-document.addEventListener("DOMContentLoaded", function () {
-    const menuBtn = document.querySelector(".open-btn");
-    const sidebar = document.querySelector(".slideMenu");
-    const navLinks = document.querySelector(".nav a");
-    const sidebarList = document.querySelector(".link");
-
-        function openSlide() {
-        sidebar.classList.toggle("show");
-    }
-
-    function moveLink() {
-        if (window.innerWidth <= 400) {
-            while (navLinks.firstChild) {
-                sidebarList.appendChild(navLinks.firstChild);
-            }
-        } else {
-            while (sidebarList.firstChild) {
-                navLinks.appendChild(sidebarList.firstChild);
-            }
-        }
-    }
-
-    moveLink();
-    openSlide();
-    window.addEventListener("resize", moveNavLinks);
-});
