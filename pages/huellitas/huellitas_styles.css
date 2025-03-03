@@ -60,7 +60,7 @@ body{
   }
 }
 .link:hover{
-  color: rgb(255, 0, 0);
+  color: green;
 }
 .titulo{
   display: flex;
@@ -142,7 +142,7 @@ body{
 
 .slide-menu a:hover {
   background: #ffffffbb;
-  color: rgb(255, 0, 0);
+  color: green;
 }
 
 /* Botón de cierre */

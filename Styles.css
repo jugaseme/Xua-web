@@ -92,16 +92,18 @@ body{
   transition-duration: 400ms;
   transition-property: width, left;
 }
-.fondo {
+
+.fondo img{
   width: 100%;
-  height: 110vh;
+  height: 110vh;    
   object-fit: cover;
   z-index: -1;
   display: flex;
   filter: brightness(0.5);
+    
   
 }
-.fondo2{
+.fondo2 img{
   width: 100%;
   height: 100vh;
   object-fit: cover;
@@ -109,13 +111,7 @@ body{
   display: flex;
   filter: brightness(0.5);
 }
-.td1{
-  overflow-x: hidden;
-  overflow-y: hidden;
-  display: flex;
-  justify-content: center;
-  
-}
+
 
 .back{
   background: linear-gradient(
