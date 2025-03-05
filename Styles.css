@@ -441,6 +441,7 @@ ul {
   color: white;
   text-shadow: white 0px 0px 10px;
 }
+
 /*responsive celular*/
 @media (max-width:426px) {
   .fondo{
@@ -529,6 +530,56 @@ ul {
     font-size: 15px;
     font-weight: 300;
     text-shadow: 0px 0px 10px #000000;
+  }
+  .puntos p{
+    font-size: 150px;
+  }
+}
+/*responsive de tablet*/
+@media (min-width: 430px) and (max-width: 900px) {
+  .fondo{
+    display: flex;
+  }
+
+  .btn_menu button {
+    font-size: 1.1rem;
+    margin-right: -20px;
+    margin-left: -5px;
+  }
+  .titulo img{
+    width: 70px;
+    height: 70px;
+    margin-left: 20px;
+    margin-right: 40px;
+  }
+  .navegacion h1{
+    font-size: 1.7rem;
+    margin-right: 1rem;
+  }
+  .link{
+    font-size: 1.2rem;
+    margin: 10px;
+    justify-content: space-evenly;
+  }
+  .t_P1 h1:nth-child(1){
+    font-size: 5rem;
+    top: 50%;
+    left: 15%;
+  }
+  .t_P1 h1:nth-child(2){
+    font-size: 5rem;
+    top: 60%;
+    left: 15%;
+  }
+  .text_R{
+    width: 500px;
+    justify-content: initial;
+    height: auto;
+    top: 35%;
+    right: 5%;
+  }
+  .text_R p{
+    font-size: 1.1rem;
   }
   .puntos p{
     font-size: 150px;

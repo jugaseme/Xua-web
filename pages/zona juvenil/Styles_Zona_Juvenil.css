@@ -482,3 +482,129 @@ top: 100%;
   }
 }
 
+/*responsive celular*/
+@media (max-width:426px) {
+  .body{
+    padding: 0;
+    margin: 0;
+    font-family: "poppins", sans-serif;
+    overflow-x: hidden;
+  }
+  .btn_menu button {
+    font-size: .9rem;
+    margin-right: -20px;
+    margin-left: -5px;
+  }
+  .titulo img:nth-child(1){
+    width: 80px;
+    height: 80px;
+    margin-left: 20px;
+    margin-right: 10px;
+  }
+  .titulo img:nth-child(2){
+    width: 100px;
+    height:100px;
+    margin-left: -10px;
+  }
+  .navegacion h1{
+    display: none;
+  }
+  .card{
+    flex-direction: column;
+  }
+  .link{
+    font-size: .8rem;
+    margin: 5px;
+    justify-content: space-evenly;
+  }
+  .nav{
+    margin-right: -19px;
+  }
+  .fondo{
+    height: 160vh;
+    width: 100%;
+  }
+  .titulo1 h1:nth-child(1){
+    font-size: 3.5em;
+    margin-right: 10px;
+  }
+  .titulo1 h1:nth-child(2){
+    font-size: 3.5rem;
+  }
+  .pop1{
+    top: 50%;
+    left: 5%;
+    width: 90%;
+    height: 100px;
+  }
+  .pop2{
+    top: 80%;
+    left: 5%;
+    width: 90%;
+    height: 100px;
+  }
+  .pop3{
+    top: 110%;
+    left: 5%;
+    width: 90%;
+    height: 100px;
+    z-index: 2000;
+  }
+  .pop1:active p{
+    font-size: 15px;
+    color:white;
+  }
+  .pop1:active{
+      height: 300px;
+      transform: translateY(-75px);
+      transition: height .5s top 1s;
+      background-color: rgba(1, 97, 170, 0.21);
+      top:60%;
+    
+  } 
+  .pop2:active p{
+    font-size: 15px;
+    color:white;
+  }
+  .pop2:active{
+      height: 300px;
+      transform: translateY(-75px);
+      transition: height .5s top 1s;
+      background-color: rgba(1, 97, 170, 0.21);
+      top:60%;
+      z-index: 2000;
+    
+  } 
+  .pop3:active p{
+    font-size: 15px;
+    color:white;
+  }
+  .pop3:active{
+      height: 300px;
+      transform: translateY(-75px);
+      transition: height .5s top 1s;
+      background-color: rgba(1, 97, 170, 0.21);
+      top:60%;
+
+  } 
+
+  .td2 h1{
+    font-size: 2.7rem;
+    left: 10%;
+  }
+  .slider-container{
+    top: 170%;
+    left: 5%;
+  }
+  .slider-container iframe{
+    width: 100%;
+    height: 100%;
+  }
+  .controls button {
+    padding: 5px;
+    height: 50px;
+    width: 50px;
+    font-size: 30px;
+  }
+
+}
