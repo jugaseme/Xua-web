@@ -44,7 +44,7 @@ body{
   font-size: 1.2rem;
 }
 .link:hover{
-  color: rgb(255, 93, 93);
+  color: rgb(255, 255, 255);
 }
 .titulo{
   display: flex;
@@ -389,4 +389,10 @@ background-color:rgb(63, 63, 63) ;
   right: 100%;
   color: #000;
   z-index: 1000;
+}
+.link:nth-child(4){
+  color: white;
+}
+.link:nth-child(4):hover{
+  color: rgb(255, 28, 28);
 }

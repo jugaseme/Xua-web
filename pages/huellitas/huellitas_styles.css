@@ -6,6 +6,7 @@ body{
   padding: 0;
   margin: 0;
   font-family: "poppins", sans-serif;
+  overflow-x: hidden;
 }
 .navbar{
   justify-content: space-between;
@@ -260,6 +261,7 @@ background-color:rgb(63, 63, 63) ;
     opacity: 1;
   }
 }
+
 .fondo{
   width: 100%;
   height: 150vh;
@@ -296,6 +298,7 @@ background-color:rgb(63, 63, 63) ;
 }
 .textico p{
   color: rgb(255, 255, 255);
+  text-shadow: #000 1px 1px 1px;
 }
 .textico2{
   position: absolute;
@@ -307,4 +310,27 @@ background-color:rgb(63, 63, 63) ;
   height: auto;
   color: rgb(255, 255, 255);
 }
+.textico2 p{
+  color: rgb(255, 255, 255);
+  text-shadow: #000 1px 1px 1px;
+}
+.textico3{
+  position: absolute;
+  top: 90%;
+  left: 0%;
+  border-radius: 30px;
+  width: 35%;
+  height: auto;
+  color: rgb(255, 255, 255);
+  text-shadow: #000 1px 1px 1px;
+  padding: 10px;
 
+}
+.textico3 h3{
+  color: green;
+  font-size: 2rem;
+  margin-bottom: -10px;
+}
+.textico3 p{
+  font-size: 1.2rem;
+}
