@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="contacto_styles.css">
   <link rel="Icon" href="../../imagenes/loogo.png">
-  <title>Zona Juvenil</title>
+  <title>Contacto</title>
 </head>
 <body>
 <div class="container">
@@ -19,7 +19,7 @@
       <div class="titulo">
         <img src="../../imagenes/loogo.png" alt="logo">
       </div>
-      <H1>Impacto Xua</H1>
+      <H1 style="color: rgb(255, 0, 0); text-shadow:10px 2px 12px rgb(255, 0, 0);">Impacto Xua</H1>
       <div class="nav">
         <a href="../../index.html" class="link">Inicio</a>
         <a href="../nosotros/nosotros.html" class="link">Nosotros</a>
@@ -45,14 +45,15 @@
       </div>
       <h1>Contactanos</h1>
       <div class="inputs">
-         <input type="text " placeholder="nombre" name="nombre" class="nombre" required>
-          <input type="text" placeholder="Apellido" name="apellido" class="apellido" required>
-          <input type="email" placeholder="Ejemplo@ejemplo.com" name="email" class="email" required>
-          <input type="tel" placeholder="Telefono" name="telefono" class="telefono" required>
-          <textarea placeholder="¿porque nos contactas?" name="mensaje" class="mensaje"></textarea>
-          <button type="submit" class="submit" id="btn-submit">Contactanos</button>
-      </div>
-      <div class="telefono_icon">
+        <form id="formulario">
+          <input type="text" name="user_name" placeholder="Nombre" class="nombre" required>
+          <input type="email" name="user_email" placeholder="Ejemplo@ejemplo.com" class="email" required>
+          <input type="tel" name="user_phone" placeholder="Teléfono" class="telefono" required>
+          <textarea name="message" placeholder="¿Por qué nos contactas?" class="mensaje" required></textarea>
+          <button type="submit" class="submit">Contáctanos</button>
+        </form>
+      </div>      
+      <div class="telefono_icon" >
         <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#e8eaed"><path d="M776-487q-5-121-89-205t-205-89v-60q72 2 135.5 30.5T729-734q48 48 76.5 111.5T836-487h-60Zm-169 0q-5-50-40-84.5T482-611v-60q75 5 127.5 57T667-487h-60Zm188 367q-116 0-236.5-56T335-335Q232-438 176-558.5T120-795q0-19.29 12.86-32.14Q145.71-840 165-840h140q14 0 24 10t14 25l26.93 125.64Q372-665 369.5-653.5t-10.73 19.73L259-533q26 44 55 82t64 72q37 38 78 69.5t86 55.5l95-98q10-11 23.15-15 13.15-4 25.85-2l119 26q15 4 25 16.04 10 12.05 10 26.96v135q0 19.29-12.86 32.14Q814.29-120 795-120ZM229-588l81-82-23-110H180q2 42 13.5 88.5T229-588Zm369 363q41 19 89 31t93 14v-107l-103-21-79 83ZM229-588Zm369 363Z"/></svg>
       </div>
     </div>
@@ -147,4 +148,26 @@
     </div>
   </footer>
   <script src="script_contacto.js"></script>
+  <!-- EmailJS CDN -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+<script>
+  (function() {
+    emailjs.init('qFmg5lo8AJFzdI0uY'); // ← Reemplaza con tu verdadero User ID de EmailJS
+  })();
+
+  // Capturar el formulario y enviar datos
+  document.getElementById('formulario').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    emailjs.sendForm('service_kq2ys1h', 'template_pcn8krs', this)
+      .then(function() {
+        alert('✅ ¡Mensaje enviado con éxito!');
+        document.getElementById('formulario').reset();
+      }, function(error) {
+        console.error('❌ Error al enviar:', error);
+        alert('Ocurrió un error al enviar. Intenta nuevamente.');
+      });
+  });
+</script>
+
 </body>  

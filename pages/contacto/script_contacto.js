@@ -5,3 +5,4 @@ function openSlide() {
 function closeSlide() {
     document.getElementById("slideMenu").style.left = "-250px"; 
 }
+

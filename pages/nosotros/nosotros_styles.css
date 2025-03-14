@@ -6,6 +6,7 @@ body{
   padding: 0;
   margin: 0;
   font-family: "poppins", sans-serif;
+  overflow-x: hidden;
 }
 
 .navbar{
@@ -336,4 +337,75 @@ background-color:rgb(63, 63, 63) ;
     rgba(255, 0, 0, 0.925) 15%,
     rgba(255, 98, 98, 0.925) 30%
   );
+}
+@media (max-width: 426px) {
+  body{
+    padding: 0;
+    margin: 0;
+    font-family: "poppins", sans-serif;
+    overflow-x: hidden;
+  }
+  .navbar{
+    height: 15rem;
+    width: 100vw;
+  }
+  .btn_menu button {
+    font-size: .9rem;
+    margin-right: -20px;
+    margin-left: -5px;
+  }
+  .titulo img{
+    margin-bottom: -150px;
+    width: 70px;
+    height: 70px;
+    margin-left: 20px;
+    margin-right: 10px;
+  }
+  .navegacion h1{
+    display: none;
+  }
+  .card{
+    flex-direction: column;
+  }
+  .link{
+    font-size: 1.2rem;
+    margin: 10px;
+    justify-content:center;
+  }
+  .Texto h1{
+    letter-spacing: -2px;
+    font-size: 3.5rem;
+    margin-top: -10px;
+  }
+  .Texto h3{
+    font-size: 2.5rem;
+    margin-top: -3.2rem;
+  }
+  .Texto{
+    width: 90%;
+    height: 100%;
+    transform: translate(0%, 0%);
+    justify-content: center;
+    text-align: center;
+  }
+  .publica{
+    width: 80%;
+    height: 300px;
+    transform: translate(0%,0%);
+  }
+  .td1{
+
+  }
+  .Equipo{
+    width: 90%;
+    height: 100%;
+    transform: translate(0%, 0%);
+    margin: 0;
+  }
+  .equipo2{
+    width: 90%;
+    height: 20%;
+    transform: translate(0%, 0%);
+    margin: 0;
+  }
 }

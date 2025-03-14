@@ -262,7 +262,7 @@ background-color:rgb(63, 63, 63) ;
   position: absolute;
   top: 37%;
   left: 5%;
-  width: 20%;
+  width: 45%;
  }
  
  .nombre:focus {
@@ -280,26 +280,6 @@ background-color:rgb(63, 63, 63) ;
    position: absolute;
    top: 10%;
   left: 10%;
- }
- .apellido {
-  border: none;
-  padding: 1rem;
-  border-radius: 1rem;
-  background: #e8e8e8;
-  transition: 0.3s;
-  position: absolute;
-  top: 37%;
-  left: 30%;
-  width: 20%;
- }
- 
- .apellido:focus {
-  outline-color: #e8e8e8;
-  background: #e8e8e8;
-  box-shadow: inset 20px 20px 60px #c5c5c5,
-     inset -20px -20px 60px #ffffff;
-  transition: 0.3s;
-  transform: scale(1.1)
  }
  .email {
   border: none;
@@ -394,5 +374,155 @@ background-color:rgb(63, 63, 63) ;
   color: white;
 }
 .link:nth-child(4):hover{
-  color: rgb(255, 28, 28);
+  color: rgb(255, 28, 28) ;
+}
+@media (max-width:426px) and (min-width: 376px){
+
+  .navegacion h1{
+ display: none;
+  }
+
+  .fondos img{
+    height: 110vh;
+  }
+  .contan h1{
+    left: 4%;
+    top:15%;
+    font-size: 350%;
+    text-shadow: 0px 0px 7px #ff0000;
+  }
+  .nombre{
+    top:40%;
+    width: 70%;
+  }
+  .email{
+    top: 52%;
+    width: 70%;
+  }
+  .telefono{
+    top: 64%;
+    width: 70%;
+    left: 5%;
+  }
+  .mensaje{
+    top: 77%;
+    width: 70%;
+    height: 15%;
+  }
+  .submit{
+    top: 100%;
+    width: 50%;
+  }
+
+
+  .card{
+   flex-direction: column;
+  }
+  
+}
+@media (max-width:375px)and (min-width: 321px){
+  .navegacion h1{
+    display: none;
+     }
+   
+     .fondos img{
+       height: 110vh;
+     }
+     .contan h1{
+       left: 4%;
+       top:15%;
+       font-size: 2.7rem;
+       text-shadow: 0px 0px 7px #ff0000;
+}
+.nombre{
+  top:40%;
+  width: 70%;
+}
+.email{
+  top: 52%;
+  width: 70%;
+}
+.telefono{
+  top: 64%;
+  width: 70%;
+  left: 5%;
+}
+.mensaje{
+  top: 77%;
+  width: 70%;
+  height: 15%;
+}
+.submit{
+  top: 100%;
+  width: 50%;
+}
+.card{
+  flex-direction: column;
+}
+}
+@media (max-width:320px) {
+  .link{
+    font-size: 1rem;
+  }
+  body{
+    overflow-x: hidden;
+  }
+  .navegacion h1{
+    display: none;
+     }
+   
+     .fondos img{
+       height: 110vh;
+     }
+.contan h1:nth-child(1){
+       left: 1%;
+       top:17%;
+       font-size: 1rem;
+       text-shadow: 0px 0px 7px #ff0000;}
+  .card{
+    flex-direction: column;
+  }
+  .socialContainer{
+    width: 40px;
+    height: 40px;
+  }
+}
+@media (max-width:768px) {
+  .navegacion h1{
+    font-size: 2rem;
+    margin-right: 1.2rem;
+     }
+   
+     .fondos img{
+       height: 110vh;
+     }
+     .contan h1{
+       left: 4%;
+       top:15%;
+       font-size: 3rem;
+       text-shadow: 0px 0px 5px #ff0000;
+     }
+     .nombre{
+       top: 40%;
+       width: 70%;
+     }
+      .email{
+        top: 52%;
+        width: 30%;
+      }
+      .telefono{
+        top: 52%;
+        width: 30%;
+        left: 45%;
+      }
+      .mensaje{
+        top: 64%;
+        width: 70%;
+        height: 15%;
+      }
+      .submit{
+        top: 90%;
+        width: 50%;
+      }
+
 }
